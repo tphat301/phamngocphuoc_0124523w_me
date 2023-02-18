@@ -20,10 +20,9 @@
     /* Seo page */
     $config['seopage']['page'] = array(
         "san-pham" => "Sản phẩm",
+        "dich-vu" => "Dịch vụ",
         "tin-tuc" => "Tin tức",
         "tuyen-dung" => "Tuyển dụng",
-        "thu-vien-anh" => "Thư viện ảnh",
-        "video" => "Video",
         "lien-he" => "Liên hệ"
     );
     $config['seopage']['width'] = 300;

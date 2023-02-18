@@ -2,13 +2,10 @@
     <div class="menu">
         <div class="">
             <ul class="d-block">
-                <li><a class="<?php if ($com == '' || $com == 'index') echo 'active'; ?> transition" href=""
-                        title="<?= trangchu ?>"><i class="bi bi-house-door-fill"></i></a></li>
-                <li><a class="<?php if ($com == 'gioi-thieu') echo 'active'; ?> transition" href="gioi-thieu"
-                        title="<?= gioithieu ?>"><?= gioithieu ?></a></li>
+                <li><a class="<?php if ($com == '' || $com == 'index') echo 'active'; ?> transition" href="" title="<?= trangchu ?>"><i class="bi bi-house-door-fill"></i></a></li>
+                <li><a class="<?php if ($com == 'gioi-thieu') echo 'active'; ?> transition" href="gioi-thieu" title="<?= gioithieu ?>"><?= gioithieu ?></a></li>
                 <li>
-                    <a class="has-child <?php if ($com == 'san-pham') echo 'active'; ?> transition" href="san-pham"
-                        title="<?= sanpham ?>"><?= sanpham ?></a>
+                    <a class="has-child <?php if ($com == 'san-pham') echo 'active'; ?> transition" href="san-pham" title="<?= sanpham ?>"><?= sanpham ?></a>
                     <?php if (count($splist)) { ?>
                     <ul>
                         <?php foreach ($splist as $klist => $vlist) {
@@ -53,6 +50,7 @@
                     </ul>
                     <?php } ?>
                 </li>
+                <li><a class="<?php if ($com == 'dich-vu') echo 'active'; ?> transition" href="dich-vu" title="Dịch vụ">Dịch vụ</a></li>
                 <li>
                     <a class="has-child <?php if ($com == 'tin-tuc') echo 'active'; ?> transition" href="tin-tuc"
                         title="<?= tintuc ?>"><?= tintuc ?></a>
@@ -100,8 +98,7 @@
                     </ul>
                     <?php } ?>
                 </li>
-                <li><a class="<?php if ($com == 'tuyen-dung') echo 'active'; ?> transition" href="tuyen-dung"
-                        title="<?= tuyendung ?>"><?= tuyendung ?></a></li>
+                <li><a class="<?php if ($com == 'tuyen-dung') echo 'active'; ?> transition" href="tuyen-dung" title="<?= tuyendung ?>"><?= tuyendung ?></a></li>
                 <li><a class="<?php if ($com == 'lien-he') echo 'active'; ?> transition" href="lien-he"
                         title="<?= lienhe ?>"><?= lienhe ?></a></li>
                 <li class="ml-auto">

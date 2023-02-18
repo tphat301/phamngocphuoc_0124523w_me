@@ -16,7 +16,7 @@
                 <?php } ?>
             </div>
             <div class="footer-news">
-                <p class="footer-title"><?= chinhsach ?></p>
+                <p class="footer-title">Chính sách</p>
                 <ul class="footer-ul">
                     <?php foreach ($policy as $v) { ?>
                     <li><a href="<?= $v[$sluglang] ?>" title="<?= $v['name' . $lang] ?>"><?= $v['name' . $lang] ?></a>

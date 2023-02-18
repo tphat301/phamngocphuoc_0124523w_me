@@ -40,6 +40,16 @@
     $config['photo']['photo_static'][$nametype]['thumb'] = '242x106x1';
     $config['photo']['photo_static'][$nametype]['img_type'] = '.png|.PNG|.Png';
 
+    /* Banner tiêu chí */
+    $nametype = "banner-tieu-chi";
+    $config['photo']['photo_static'][$nametype]['title_main'] = "Banner tiêu chí";
+    $config['photo']['photo_static'][$nametype]['check'] = array("hienthi" => "Hiển thị");
+    $config['photo']['photo_static'][$nametype]['images'] = true;
+    $config['photo']['photo_static'][$nametype]['width'] = 528;
+    $config['photo']['photo_static'][$nametype]['height'] = 339;
+    $config['photo']['photo_static'][$nametype]['thumb'] = '528x339x1';
+    $config['photo']['photo_static'][$nametype]['img_type'] = '.jpg|.gif|.png|.jpeg|.gif';
+
     /* Slideshow */
     $nametype = "slide";
     $config['photo']['man_photo'][$nametype]['title_main_photo'] = "Slideshow";

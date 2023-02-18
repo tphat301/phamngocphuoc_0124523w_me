@@ -2,8 +2,8 @@
 	<div class="header-top">
 		<div class="wrap-content d-flex align-items-center justify-content-between">
 			<p class="info-header"><?=$slogan['name'.$lang]?></p>
-			<p class="info-header"><i class="bi bi-telephone-fill"></i> Hotline: <?=$func->formatPhone($optsetting['hotline'])?></p>
-			<p class="info-header"><i class="bi bi-envelope"></i>Email: <?=$optsetting['email']?></p>
+			<p class="info-header"><i class="bi bi-telephone-fill"></i><?=$func->formatPhone($optsetting['hotline'])?></p>
+			<p class="info-header"><i class="bi bi-envelope"></i><?=$optsetting['email']?></p>
 		</div>
 	</div>
 	<div class="header-bottom">

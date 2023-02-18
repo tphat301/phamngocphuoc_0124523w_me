@@ -18,7 +18,7 @@
 		'arrayDomainSSL' => array(),
 		'database' => array(
 			'server-name' => $_SERVER["SERVER_NAME"],
-			'url' => '/2023/thang2/phamngocphuoc_0124523w/',
+			'url' => '/phamngocphuoc_0124523w_me/',
 			'type' => 'mysql',
 			'host' => 'localhost',
 			'username' => 'root',

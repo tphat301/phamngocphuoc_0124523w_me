@@ -23,11 +23,52 @@
     </div>
 </div>
 
-<!-- SP NỔI BẬC -->
+<!-- TIÊU CHÍ ĐÁNH GIÁ -->
+<div class="tieuchi">
+    <div class="wrap-content row">
+        <?php if(count($tieuChi)) {?>
+            <div class="tieuchi-left">
+                <div class="main-box-item-tieuchi">
+                    <div class="box-tieuchi-item-before row">
+                        <?php foreach($tieuChi as $k => $v) {?>
+                            <?php if($k >= 0 && $k <= 1) { ?>
+                                <div class="tieuchi-item-before col-md-6">
+                                    <a class="box-img-tieuchi">
+                                        <img class="lazy" onerror="this.src='<?= THUMBS ?>/50x50x1/assets/images/noimage.png';" data-src="<?= UPLOAD_NEWS_L . $v['photo'] ?>" alt="<?= $v['name' . $lang] ?>" title="<?= $v['name' . $lang] ?>"/>
+                                    </a>
+                                    <p class="tieuchi-title"><?=$v['name'.$lang]?></p>
+                                </div>
+                            <?php } ?>
+                        <?php } ?>
+                    </div>
+                    <div class="box-tieuchi-item-before row">
+                        <?php foreach($tieuChi as $k => $v) {?>
+                            <?php if($k >= 2 && $k <= 3) { ?>
+                                <div class="tieuchi-item-before col-md-6">
+                                    <a class="box-img-tieuchi">
+                                        <img class="lazy" onerror="this.src='<?= THUMBS ?>/50x50x1/assets/images/noimage.png';" data-src="<?= UPLOAD_NEWS_L . $v['photo'] ?>" alt="<?= $v['name' . $lang] ?>" title="<?= $v['name' . $lang] ?>"/>
+                                    </a>
+                                    <p class="tieuchi-title"><?=$v['name'.$lang]?></p>
+                                </div>
+                            <?php } ?>
+                        <?php } ?>
+                    </div>
+                </div>
+            </div>
+        <?php } ?>
+        <div class="tieuchi-right">
+            <a class="hover_xam">
+                <img class="lazy" onerror="this.src='<?= THUMBS ?>/528x339x1/assets/images/noimage.png';" data-src="<?= THUMBS ?>/528x339x1/<?= UPLOAD_PHOTO_L. $bannerTieuChi['photo'] ?>" alt="Banner tiêu chí" title="Banner tiêu chí"/>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- SẢN PHẨM NỔI BẬC -->
 <?php if (count($splistnb)) { ?>
 <div class="w-pronb">
     <div class="wrap-content padding-top-bottom-ed">
-        <div class="title-main"><span>Sản phẩm nổi bật</span></div>
+        <div class="title-main"><span>Sản phẩm chính</span></div>
         <div class=" d-flex align-items-center justify-content-center flex-wrap ">
             <div class="dm-noibat d-flex flex-wrap align-items-center justify-content-center">
                 <div class="cats-owl list-hot">
@@ -59,7 +100,7 @@
 <div class="register-service">
     <div class="wrap-content">
         <div class="box-title-register-service">
-            <p class="title-res"><span><?= dangkynhantin ?></span></p>
+            <p class="title-res"><span>Liên hệ để được tư vấn</span></p>
             <div class="desc-main-product"><span><?=$sloganDangKyNhanTin['name'.$lang]?></span></div>
         </div>
         <div class="register-service-main">
@@ -108,16 +149,14 @@
             <div class="left-intro">
             <p class="title-main-edd"><span>Tin tức & sự kiện</span></p>
                 <div class="owl-page owl-carousel owl-theme" data-xsm-items="1:10" data-sm-items="1:10" data-md-items="3:10"
-                    data-lg-items="2:10" data-xlg-items="2:20" data-rewind="1" data-autoplay="0" data-loop="0" data-lazyload="0"
+                    data-lg-items="2:10" data-xlg-items="2:20" data-rewind="1" data-autoplay="1" data-loop="0" data-lazyload="0"
                     data-mousedrag="1" data-touchdrag="1" data-smartspeed="500" data-autoplayspeed="3500" data-dots="1"
                     data-nav="0" data-navtext="" data-navcontainer="">
                     <?php foreach ($newsnb as $k => $v) { ?>
                         <div class="item-newsnb">
                             <p class="pic-newsnb">
                                 <a class="scale-img" href="<?= $v[$sluglang] ?>" title="<?= $v['name' . $lang] ?>">
-                                    <img class="lazy w-100" onerror="this.src='<?= THUMBS ?>/312x275x1/assets/images/noimage.png';"
-                                        data-src="<?= THUMBS ?>/312x275x1/<?= UPLOAD_NEWS_L . $v['photo'] ?>"
-                                        alt="<?= $v['name' . $lang] ?>" title="<?= $v['name' . $lang] ?>"/>
+                                    <img class="lazy w-100" onerror="this.src='<?= THUMBS ?>/312x275x1/assets/images/noimage.png';" data-src="<?= THUMBS ?>/312x275x1/<?= UPLOAD_NEWS_L . $v['photo'] ?>" alt="<?= $v['name' . $lang] ?>" title="<?= $v['name' . $lang] ?>"/>
                                 </a>
                             </p>
                             <div class="info-newsnb">
@@ -156,7 +195,7 @@
             </div>
             <div class="box-slide-alb">
                 <div class="owl-page owl-carousel owl-theme" data-xsm-items="1:10" data-sm-items="1:10" data-md-items="3:10"
-                data-lg-items="2:10" data-xlg-items="4:6" data-rewind="1" data-autoplay="0" data-loop="0" data-lazyload="0"
+                data-lg-items="2:10" data-xlg-items="5:6" data-rewind="1" data-autoplay="0" data-loop="0" data-lazyload="0"
                 data-mousedrag="1" data-touchdrag="1" data-smartspeed="500" data-autoplayspeed="3500" data-dots="0"
                 data-nav="1" data-navtext="<svg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-arrow-narrow-left' width='50' height='37' viewBox='0 0 24 24' stroke-width='1' stroke='#ffffff' fill='none' stroke-linecap='round' stroke-linejoin='round'><path stroke='none' d='M0 0h24v24H0z' fill='none'/><line x1='5' y1='12' x2='19' y2='12' /><line x1='5' y1='12' x2='9' y2='16' /><line x1='5' y1='12' x2='9' y2='8' /></svg>|<svg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-arrow-narrow-right' width='50' height='37' viewBox='0 0 24 24' stroke-width='1' stroke='#ffffff' fill='none' stroke-linecap='round' stroke-linejoin='round'><path stroke='none' d='M0 0h24v24H0z' fill='none'/><line x1='5' y1='12' x2='19' y2='12' /><line x1='15' y1='16' x2='19' y2='12' /><line x1='15' y1='8' x2='19' y2='12' /></svg>" data-navcontainer=".control-alb">
                     <?php foreach($hinhAnhThiCong as $k => $v) { ?>

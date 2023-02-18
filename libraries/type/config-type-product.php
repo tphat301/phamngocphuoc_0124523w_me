@@ -5,8 +5,8 @@
     $config['product'][$nametype]['dropdown'] = true;
     $config['product'][$nametype]['list'] = true;
     $config['product'][$nametype]['view'] = true;
-    $config['product'][$nametype]['copy'] = true;
-    $config['product'][$nametype]['copy_image'] = true;
+    $config['product'][$nametype]['copy'] = false;
+    $config['product'][$nametype]['copy_image'] = false;
     $config['product'][$nametype]['slug'] = true;
     $config['product'][$nametype]['check'] = array("noibat" => "Nổi bật", "hienthi" => "Hiển thị");
     $config['product'][$nametype]['images'] = true;
@@ -23,7 +23,7 @@
     $config['product'][$nametype]['seo'] = true;
     $config['product'][$nametype]['width'] = 280;
     $config['product'][$nametype]['height'] = 320;
-    $config['product'][$nametype]['thumb'] = '100x100x1';
+    $config['product'][$nametype]['thumb'] = '280x320x1';
     $config['product'][$nametype]['img_type'] = '.jpg|.gif|.png|.jpeg|.gif';
 
     /* Sản phẩm (List) */
@@ -31,13 +31,13 @@
     $config['product'][$nametype]['images_list'] = true;
     $config['product'][$nametype]['show_images_list'] = true;
     $config['product'][$nametype]['slug_list'] = true;
-    $config['product'][$nametype]['check_list'] = array("noibat" => "Nổi bật", "hienthi" => "Hiển thị");
+    $config['product'][$nametype]['check_list'] = array("hienthi" => "Hiển thị");
     $config['product'][$nametype]['gallery_list'] = array();
     $config['product'][$nametype]['desc_list'] = true;
     $config['product'][$nametype]['seo_list'] = true;
-    $config['product'][$nametype]['width_list'] = 60;
-    $config['product'][$nametype]['height_list'] = 50;
-    $config['product'][$nametype]['thumb_list'] = '60x50x1';
+    $config['product'][$nametype]['width_list'] = 280;
+    $config['product'][$nametype]['height_list'] = 320;
+    $config['product'][$nametype]['thumb_list'] = '280x320x1';
     $config['product'][$nametype]['img_type_list'] = '.jpg|.gif|.png|.jpeg|.gif';
 
     /* Thư viện ảnh */
@@ -45,7 +45,7 @@
     $config['product'][$nametype]['title_main'] = "Thư viện ảnh";
     $config['product'][$nametype]['check'] = array("hienthi" => "Hiển thị");
     $config['product'][$nametype]['view'] = true;
-    $config['product'][$nametype]['copy'] = true;
+    $config['product'][$nametype]['copy'] = false;
     $config['product'][$nametype]['slug'] = true;
     $config['product'][$nametype]['images'] = true;
     $config['product'][$nametype]['show_images'] = true;

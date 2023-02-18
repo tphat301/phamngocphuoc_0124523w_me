@@ -4,6 +4,7 @@
     $banner_seo_home = $cache->get("select id, photo, options from #_photo where type = ? and act = ? limit 0,1", array('banner-seo-home', 'photo_static'), 'fetch', 7200);
     $popup = $cache->get("select name$lang, photo, link from #_photo where type = ? and act = ? and find_in_set('hienthi',status) limit 0,1", array('popup', 'photo_static'), 'fetch', 7200);
     $BannerQC = $cache->get("select name$lang, photo, link from #_photo where type = ? and act = ? and find_in_set('hienthi',status) limit 0,1", array('banner-quangcao', 'photo_static'), 'fetch', 7200);
+    $bannerTieuChi = $cache->get("select photo from #_photo where type = ? and act = ? and find_in_set('hienthi',status) limit 0,1", array('banner-tieu-chi', 'photo_static'), 'fetch', 7200);
     $video = $cache->get("select name$lang, photo, link_video from #_photo where type = ? and act = ? and find_in_set('hienthi',status) limit 0,1", array('video', 'photo_static'), 'fetch', 7200);
     $about = $cache->get("select name$lang, photo, desc$lang, content$lang, slug$lang from #_static where type = ? and find_in_set('hienthi',status) limit 0,1", array('gioi-thieu'), 'fetch', 7200);
 
@@ -13,6 +14,7 @@
     $pronb = $cache->get("select name$lang, slugvi, slugen, id, photo, regular_price, sale_price, discount, type from #_product where type = ? and find_in_set('noibat',status) and find_in_set('hienthi',status) order by id desc", array('san-pham'), 'result', 7200);
     $splistnb = $cache->get("select name$lang, photo, slugvi, slugen, id from #_product_list where type = ? and find_in_set('noibat',status) and find_in_set('hienthi',status) order by numb asc", array('san-pham'), 'result', 7200);
     $newsnb = $cache->get("select name$lang, slugvi, slugen, desc$lang, date_created, id, photo from #_news where type = ? and find_in_set('noibat',status) and find_in_set('hienthi',status) order by id desc", array('tin-tuc'), 'result', 7200);
+    $tieuChi = $cache->get("select name$lang, date_created, photo from #_news where type = ? and find_in_set('noibat',status) and find_in_set('hienthi',status) order by numb asc", array('tieu-chi'), 'result', 7200);
     $videonb = $cache->get("select id,name$lang,link_video from #_photo where type = ? and find_in_set('noibat',status) and find_in_set('hienthi',status) order by numb asc", array('video'), 'result', 7200);
     $partner = $cache->get("select name$lang, link, photo from #_photo where type = ? and find_in_set('hienthi',status) order by numb asc", array('doitac'), 'result', 7200);
     $quangcao = $cache->get("select name$lang, photo, link from #_photo where type = ? and find_in_set('hienthi',status) order by numb asc", array('quang-cao'), 'result', 7200);
