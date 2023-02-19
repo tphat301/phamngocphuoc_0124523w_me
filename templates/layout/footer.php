@@ -1,5 +1,5 @@
 <div class="footer">
-    <div class="footer-article padding-top-bottom">
+    <div class="footer-article padding-top-bottom d-hiden">
         <div class="wrap-content d-flex flex-wrap align-items-start justify-content-between">
             <div class="footer-news">
                 <p class="name-company-footer"><?= $footer['name' . $lang] ?></p>
