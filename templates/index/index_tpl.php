@@ -1,5 +1,5 @@
 <!-- GIỚI THIỆU -->
-<div class="about">
+<div class="about" data-aos="fade-up">
     <div class="wrap-content"> 
         <div class="row">
             <div class="about-left col-sm-12 col-md-6 col-lg-6">
@@ -24,7 +24,7 @@
 </div>
 
 <!-- TIÊU CHÍ ĐÁNH GIÁ -->
-<div class="tieuchi">
+<div class="tieuchi" data-aos="fade-down">
     <div class="wrap-content d-flex flex-wrap align-items-center">
         <?php if(count($tieuChi)) {?>
             <div class="tieuchi-left">
@@ -97,7 +97,7 @@
 <?php } ?>
 
 <!-- PHẦN ĐĂNG KÝ NHẬN TIN -->
-<div class="register-service">
+<div class="register-service" data-aos="fade-up-right">
     <div class="wrap-content">
         <div class="box-title-register-service">
             <p class="title-res"><span>Liên hệ để được tư vấn</span></p>
@@ -144,7 +144,7 @@
 
 <!-- TIN TỨC & SỰ KIỆN -->
 <?php if (count($newsnb)) { ?>
-    <div class="box-main-news">
+    <div class="box-main-news" data-aos="fade-down-right">
         <div class="wrap-intro wrap-content d-flex flex-wrap align-items-center justify-content-between">
             <div class="left-intro">
             <p class="title-main-edd"><span>Tin tức & sự kiện</span></p>
@@ -188,7 +188,7 @@
 
 <!-- HÌNH ẢNH THI CÔNG -->
 <?php if (count($hinhAnhThiCong)) { ?>
-    <div class="alb">
+    <div class="alb" data-aos="fade-down-right">
         <div class="wp-alb">
             <div class="title-main title-main-alb">
                 Hình ảnh thi công
