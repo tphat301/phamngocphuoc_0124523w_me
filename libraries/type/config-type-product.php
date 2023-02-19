@@ -31,7 +31,7 @@
     $config['product'][$nametype]['images_list'] = true;
     $config['product'][$nametype]['show_images_list'] = true;
     $config['product'][$nametype]['slug_list'] = true;
-    $config['product'][$nametype]['check_list'] = array("hienthi" => "Hiển thị");
+    $config['product'][$nametype]['check_list'] = array("noibat" => "Nổi bật","hienthi" => "Hiển thị");
     $config['product'][$nametype]['gallery_list'] = array();
     $config['product'][$nametype]['desc_list'] = true;
     $config['product'][$nametype]['seo_list'] = true;

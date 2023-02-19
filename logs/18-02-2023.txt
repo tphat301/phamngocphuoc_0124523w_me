@@ -392,3 +392,4 @@
 ::1(admin)--query--tables(delete from table_user_online where time < 1676731368) (21:52:48 18/02/2023)
 ::1(admin)--query--tables(delete from table_user_online where time < 1676731416) (21:53:36 18/02/2023)
 ::1(admin)--query--tables(delete from table_user_online where time < 1676731425) (21:53:45 18/02/2023)
+::1(admin)--update--user([["","id","=","1"]]) (21:57:27 18/02/2023)

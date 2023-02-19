@@ -27,6 +27,24 @@
   font-display: block;
 }
 
+@font-face {
+  font-family: "BeR";
+  src: url("../fonts/BeVietnam-Regular.woff");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "BeB";
+  src: url("../fonts/BeVietnam-Bold.woff");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "BeL";
+  src: url("../fonts/BeVietnam-Light.woff");
+  font-display: block;
+}
+
 /* Popup Custom */
 .popup-custom .modal-content {
   border-radius: 0px;
@@ -294,14 +312,17 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 33px;
   text-transform: uppercase;
   color: #00a54f;
+  font-weight: 600;
+  font-family: "Oswald", sans-serif;
 }
 
 .title-main-edd span,
 .title-main span {
   text-transform: uppercase;
   color: #00a54f;
-  font-weight: 800;
+  font-weight: 600;
   font-size: 33px;
+  font-family: "Oswald", sans-serif;
 }
 
 .title-detail-main {
@@ -501,6 +522,7 @@ img:not([src]) {
 
 .info-header {
   margin-bottom: 0px;
+  font-family: "BeR";
 }
 
 .info-header i {
@@ -560,10 +582,13 @@ img:not([src]) {
 /* Menu */
 .menu {
   background-color: rgb(0 0 0 / 60%);
-  position: relative;
-  z-index: 100;
+  position: fixed;
+  z-index: 105;
   max-width: fit-content;
-  top: 30px;
+  top: 53px;
+  right: 0;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
 }
 
 .menu ul {
@@ -587,13 +612,14 @@ img:not([src]) {
 .menu ul li a {
   display: block;
   position: relative;
-  font-size: 13px;
+  font-size: 17px;
   color: #ffffff;
   padding: 0 88px 0 20px;
-  font-weight: 500;
   text-transform: uppercase;
   text-decoration: none !important;
   height: 100%;
+  font-weight: 100;
+  font-family: "Be Vietnam Pro", sans-serif;
 }
 
 .menu ul li a i {
@@ -654,6 +680,8 @@ img:not([src]) {
   position: absolute;
   min-width: 250px;
   left: -250px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
   top: 2px;
   background: rgb(0 0 0 / 60%);
   -webkit-box-shadow: 1px 1px 15px rgb(0 0 0 / 15%);
@@ -892,7 +920,6 @@ img:not([src]) {
   height: 40px;
   overflow: hidden;
   background: #ffffff;
-  border: 1px solid var(--color-black);
   z-index: 2;
   opacity: 0;
   border-radius: 25px;
@@ -1423,6 +1450,7 @@ a.name-newsnb {
   font-size: 16px;
   display: block;
   padding: 0 16px;
+  font-family: "BeB";
 }
 
 a.name-newsnb.text-split {
@@ -1437,6 +1465,7 @@ a.name-newsnb:hover {
   color: #202020;
   padding: 0 25px;
   margin-bottom: 0;
+  font-family: "BeL";
 }
 
 /* end bottom */
@@ -1559,7 +1588,9 @@ a.name-newsnb:hover {
   margin-bottom: 10px;
   position: absolute;
   bottom: 30px;
+  font-weight: 100;
   transition: all 0.3s eat-out;
+  font-family: "BeR";
 }
 
 .name-product:hover {
@@ -2153,9 +2184,9 @@ a.name-newsnb:hover {
   text-transform: uppercase;
   font-size: 16px;
   position: relative;
-  padding-bottom: 5px;
   color: #fff;
   padding: 16px 24px;
+  font-family: "BeB";
 }
 
 .footer-title::before {
@@ -2185,6 +2216,7 @@ a.name-newsnb:hover {
   color: #fff;
   position: relative;
   padding: 16px 24px;
+  font-family: "BeB";
 }
 
 .name-company-footer::before {
@@ -2210,6 +2242,7 @@ a.name-newsnb:hover {
 
 .footer-info p {
   color: #fff;
+  font-family: "BeL";
 }
 
 .footer-ul {
@@ -2228,6 +2261,7 @@ a.name-newsnb:hover {
 
 .footer-ul li a {
   color: #fff;
+  font-family: "BeL";
 }
 
 .footer-ul li a:hover {
@@ -2269,6 +2303,12 @@ a.name-newsnb:hover {
 
 .copyright {
   font-size: 13px;
+  font-family: "BeL";
+}
+
+.copyright span {
+  font-family: "BeB";
+  text-transform: uppercase;
 }
 
 .statistic {
@@ -2634,12 +2674,12 @@ coccocgrammar {
 
 /* Zalo */
 .btn-zalo {
-  bottom: 315px;
+  bottom: 230px;
 }
 
 /* Phone */
 .btn-phone {
-  bottom: 230px;
+  bottom: 315px;
 }
 
 /* Messenger */
@@ -2709,11 +2749,11 @@ coccocgrammar {
   position: fixed;
   cursor: pointer;
   bottom: 150px;
-  right: 17px;
+  left: 20px;
   width: 56px;
   height: 56px;
   text-align: center;
-  background: #1182fc;
+  background: #00a54f;
   border-radius: 100%;
   overflow: hidden;
   z-index: 99;
@@ -2919,9 +2959,9 @@ coccocgrammar {
 }
 
 .toolbar {
-  background: var(--background-static);
+  background: #00a54f;
   width: 100%;
-  padding: 3vw;
+  padding: 10px;
   bottom: 0px;
   position: fixed;
   z-index: 500;
@@ -3445,6 +3485,7 @@ coccocgrammar {
   border-radius: 5px;
   height: 100%;
   max-width: max-content;
+  font-family: "BeB";
 }
 
 /* .dm-noibat a:hover, */
@@ -3660,7 +3701,7 @@ box-img-cat a img.active {
   padding: 6px 0 6px 55px;
   border-radius: 24px;
   height: 48px;
-  background: var(--color-red);
+  background: #00a54f;
   color: #fef4f4;
   font-size: 13px;
   font-family: "RR";
@@ -3835,17 +3876,20 @@ box-img-cat a img.active {
   text-transform: uppercase;
   font-size: 33px;
   color: #fff;
+  font-weight: 600;
+  font-family: "Be Vietnam Pro", sans-serif;
 }
 
 .desc-main-product {
   display: block;
   position: relative;
   text-align: center;
-  font-size: 14px;
   color: #fff;
   margin-bottom: 30px;
   font-style: italic;
   font-size: 16px;
+  font-weight: 100;
+  font-family: "BeL";
 }
 
 .box-content textarea,
@@ -3883,6 +3927,7 @@ box-img-cat a img.active {
   padding: 12px 36px;
   border-radius: 6px;
   color: #fff;
+  font-family: "BeB";
   font-size: 16px;
   background-color: #00a54f;
   transition: all 0.3s ease-out;
@@ -4017,6 +4062,8 @@ box-img-cat a img.active {
   text-transform: uppercase;
   margin-bottom: 16px;
   display: block;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 600;
 }
 
 .about-title {
@@ -4025,6 +4072,8 @@ box-img-cat a img.active {
   position: relative;
   padding-bottom: 8px;
   margin-bottom: 12px;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 100;
 }
 
 .about-title::before {
@@ -4045,6 +4094,7 @@ box-img-cat a img.active {
   color: #0e0e0e;
   line-height: 24px;
   margin-bottom: 18px;
+  font-family: "BeR";
 }
 
 .link-btn-more-ab {
@@ -4062,6 +4112,7 @@ box-img-cat a img.active {
   text-decoration: none;
   color: green;
   border: 1px solid green;
+  font-family: "BeR";
 }
 
 .link-btn-more-ab:hover::before {
@@ -4119,6 +4170,7 @@ box-img-cat a img.active {
 .tieuchi-item-before {
   display: block;
   text-align: center;
+  width: 50%;
 }
 
 .tieuchi-title {
@@ -4126,14 +4178,16 @@ box-img-cat a img.active {
   margin-top: 8px;
   font-size: 16px;
   color: #0e0e0e;
+  font-family: "BeB";
 }
 
 .tieuchi {
   padding-top: 120px;
-  padding-bottom: 72px;
+  padding-bottom: 54px;
 }
 
 .tieuchi-left {
+  max-width: 50%;
   background: url(../images/noithat_phamngocphuoc_0124523w_t2.png);
   height: 354px;
   background-repeat: no-repeat;
@@ -4141,10 +4195,10 @@ box-img-cat a img.active {
 
 .box-tieuchi-item-before {
   margin-bottom: 61px;
-}
-
-.tieuchi-left {
-  max-width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .tieuchi-right {
@@ -4350,6 +4404,228 @@ box-img-cat a img.active {
 }
 
 @media (max-width: 576px) {
+  /*  */
+  .tieuchi-left {
+    max-width: 100%;
+    background: transparent;
+    height: inherit;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tieuchi-right {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .tieuchi-right::after {
+    display: none;
+  }
+
+  .box-tieuchi-item-before {
+    margin-bottom: 20px;
+  }
+
+  .about {
+    padding-top: 20px;
+  }
+
+  .about-left {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .about-left::before {
+    display: none;
+  }
+
+  .about-title {
+    font-size: 14px;
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+  }
+
+  .name-company-ab {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 4px;
+  }
+
+  .about-content {
+    font-size: 12px;
+    text-align: justify;
+    margin-bottom: 8px;
+  }
+
+  .link-btn-more-ab {
+    font-size: 13px;
+  }
+
+  .link-btn-more-ab::before {
+    width: 105px;
+  }
+
+  .tieuchi {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .box-about-more {
+    display: block;
+    text-align: center;
+  }
+
+  .header-top {
+    display: none;
+  }
+
+  .slideshow {
+    margin-top: 0 !important;
+  }
+
+  .menu-res {
+    background: #00a54f;
+    width: 100%;
+  }
+
+  .header-bottom {
+    position: relative;
+  }
+
+  .header-bottom .wrap-content {
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+
+  .logo-header {
+    max-width: 100px;
+    display: block;
+    margin: auto;
+  }
+
+  .w-menu {
+    width: 100%;
+    position: fixed;
+    z-index: 105;
+  }
+
+  .tieuchi-title {
+    font-size: 11px;
+  }
+
+  .padding-top-bottom-ed {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .title-main-edd span,
+  .title-main span {
+    font-size: 20px;
+  }
+
+  .title-main {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+
+  .box-img-cat img {
+    padding: 4px 8px;
+  }
+
+  .dm-noibat a {
+    font-size: 12px;
+  }
+
+  .name-product {
+    font-size: 12px;
+  }
+
+  .title-res span {
+    font-size: 20px;
+  }
+
+  .desc-main-product {
+    font-size: 12px;
+  }
+
+  .title-res {
+    padding-top: 20px;
+  }
+
+  .form-sub input {
+    font-size: 12px;
+  }
+
+  .register-service {
+    padding-bottom: 20px;
+  }
+
+  .box-main-news {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  a.name-newsnb {
+    margin-bottom: 8px;
+  }
+
+  .desc-newsnb {
+    font-size: 13px;
+  }
+
+  .item-newsnb {
+    padding-bottom: 20px;
+  }
+
+  .pic-video:before {
+    width: 60px;
+    height: 60px;
+    top: 40%;
+  }
+
+  .alb {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .title-main.title-main-alb {
+    font-size: 20px;
+  }
+
+  .wrap-partner {
+    padding-bottom: 20px;
+  }
+
+  #footer-map iframe {
+    position: relative !important;
+    width: 100% !important;
+  }
+
+  #footer-map::before {
+    bottom: -2px;
+  }
+
+  .breadCrumbs {
+    margin-top: 0;
+  }
+
+  .footer-powered .wrap-content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .padding-top-bottom {
+    padding: 10px 0 !important;
+  }
+
+  .item-video1 img {
+    height: initial;
+  }
+  /*  */
+
   .newshome-scroll {
     width: 100%;
   }
@@ -4376,4 +4652,224 @@ box-img-cat a img.active {
   .cart-pro-detail a:first-child {
     margin-bottom: 5px !important;
   }
+}
+
+@media (max-width: 375px) {
+  /*  */
+  .tieuchi-left {
+    max-width: 100%;
+    background: transparent;
+    height: inherit;
+  }
+
+  .tieuchi-right {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .tieuchi-right::after {
+    display: none;
+  }
+
+  .box-tieuchi-item-before {
+    margin-bottom: 20px;
+  }
+
+  .about {
+    padding-top: 20px;
+  }
+
+  .about-left {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .about-left::before {
+    display: none;
+  }
+
+  .about-title {
+    font-size: 14px;
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+  }
+
+  .name-company-ab {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 4px;
+  }
+
+  .about-content {
+    font-size: 12px;
+    text-align: justify;
+    margin-bottom: 8px;
+  }
+
+  .link-btn-more-ab {
+    font-size: 13px;
+  }
+
+  .link-btn-more-ab::before {
+    width: 105px;
+  }
+
+  .tieuchi {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .box-about-more {
+    display: block;
+    text-align: center;
+  }
+
+  .header-top {
+    display: none;
+  }
+
+  .slideshow {
+    margin-top: 0 !important;
+  }
+
+  .menu-res {
+    background: #00a54f;
+    width: 100%;
+  }
+
+  .header-bottom {
+    position: relative;
+  }
+
+  .header-bottom .wrap-content {
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+
+  .logo-header {
+    max-width: 100px;
+    display: block;
+    margin: auto;
+  }
+
+  .w-menu {
+    width: 100%;
+    position: fixed;
+    z-index: 105;
+  }
+
+  .tieuchi-title {
+    font-size: 11px;
+  }
+
+  .padding-top-bottom-ed {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .title-main-edd span,
+  .title-main span {
+    font-size: 20px;
+  }
+
+  .title-main {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+
+  .box-img-cat img {
+    padding: 4px 8px;
+  }
+
+  .dm-noibat a {
+    font-size: 12px;
+  }
+
+  .name-product {
+    font-size: 12px;
+  }
+
+  .title-res span {
+    font-size: 20px;
+  }
+
+  .desc-main-product {
+    font-size: 12px;
+  }
+
+  .title-res {
+    padding-top: 20px;
+  }
+
+  .form-sub input {
+    font-size: 12px;
+  }
+
+  .register-service {
+    padding-bottom: 20px;
+  }
+
+  .box-main-news {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  a.name-newsnb {
+    margin-bottom: 8px;
+  }
+
+  .desc-newsnb {
+    font-size: 13px;
+  }
+
+  .item-newsnb {
+    padding-bottom: 20px;
+  }
+
+  .pic-video:before {
+    width: 60px;
+    height: 60px;
+    top: 40%;
+  }
+
+  .alb {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .title-main.title-main-alb {
+    font-size: 20px;
+  }
+
+  .wrap-partner {
+    padding-bottom: 20px;
+  }
+
+  #footer-map iframe {
+    position: relative !important;
+    width: 100% !important;
+  }
+
+  #footer-map::before {
+    bottom: -2px;
+  }
+
+  .breadCrumbs {
+    margin-top: 0;
+  }
+
+  .footer-powered .wrap-content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .padding-top-bottom {
+    padding: 10px 0 !important;
+  }
+
+  .item-video1 img {
+    height: initial;
+  }
+  /*  */
 }

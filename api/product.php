@@ -38,7 +38,7 @@
 <?php if($countItems) { ?>
 	<div class="flex-cus row">
 		<?php foreach($items as $k => $v) { ?>
-			<div class="col-6 col-sm-6 col-md-4 col-lg-3 mg-cus mb-3">
+			<div class="col-sm-12 col-md-4 col-lg-3 mg-cus mb-3">
 				<div class="box-product" data-aos="fade-up" data-aos-duration="1000">
 					<div class="pic-product">
 						<a class="text-decoration-none scale-img hover_xam" href="<?= $v[$sluglang] ?>" title="<?= $v['name' . $lang] ?>">

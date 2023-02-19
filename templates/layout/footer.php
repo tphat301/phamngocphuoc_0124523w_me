@@ -32,13 +32,13 @@
     </div>
     <div class="footer-powered">
         <div class="wrap-content d-flex flex-wrap align-items-center justify-content-center">
-            <div class="copyright mr-2">Copyright © 2023 <?= $copyright['name' . $lang] ?> - By Nina -</div>
+            <div class="copyright mr-2">Copyright © 2023 <span><?= $copyright['name' . $lang] ?></span> - By Nina -</div>
             <div class="statistic">
                 Online: <span class="numb-onl"><?= $online ?></span>
             </div>
         </div>
     </div>
-    <!-- <?= $addons->set('messages-facebook', 'messages-facebook', 2); ?> -->
+    <?= $addons->set('messages-facebook', 'messages-facebook', 2); ?>
 </div>
 <a class="btn-zalo btn-frame text-decoration-none" target="_blank"
     href="https://zalo.me/<?= preg_replace('/[^0-9]/', '', $optsetting['zalo']); ?>">
@@ -52,9 +52,3 @@
     <div class="animated infinite pulse kenit-alo-circle-fill"></div>
     <i><img data-src="assets/images/hl.png" alt="Hotline" class="lazy"></i>
 </a>
-<!-- <?php if ($deviceType != 'mobile') { ?>
-<div class="hotline-fix">
-    <a href="tel:<?= preg_replace('/[^0-9]/', '', $optsetting['hotline']); ?>"
-        class="text-decoration-none">HOTLINE<span><?= $optsetting['hotline'] ?></span></a>
-</div>
-<?php } ?> -->

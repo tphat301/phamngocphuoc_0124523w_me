@@ -15,6 +15,9 @@
 <!-- Favicon -->
 <link href="<?=ASSET.UPLOAD_PHOTO_L.$favicon['photo']?>" rel="shortcut icon" type="image/x-icon" />
 
+<!-- Font Oswald -->
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;600&display=swap" rel="stylesheet">
+
 <!-- Webmaster Tool -->
 <?=htmlspecialchars_decode($setting['mastertool'])?>
 

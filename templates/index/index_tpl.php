@@ -25,14 +25,14 @@
 
 <!-- TIÊU CHÍ ĐÁNH GIÁ -->
 <div class="tieuchi">
-    <div class="wrap-content row">
+    <div class="wrap-content d-flex flex-wrap align-items-center">
         <?php if(count($tieuChi)) {?>
             <div class="tieuchi-left">
                 <div class="main-box-item-tieuchi">
-                    <div class="box-tieuchi-item-before row">
+                    <div class="box-tieuchi-item-before">
                         <?php foreach($tieuChi as $k => $v) {?>
                             <?php if($k >= 0 && $k <= 1) { ?>
-                                <div class="tieuchi-item-before col-md-6">
+                                <div class="tieuchi-item-before">
                                     <a class="box-img-tieuchi">
                                         <img class="lazy" onerror="this.src='<?= THUMBS ?>/50x50x1/assets/images/noimage.png';" data-src="<?= UPLOAD_NEWS_L . $v['photo'] ?>" alt="<?= $v['name' . $lang] ?>" title="<?= $v['name' . $lang] ?>"/>
                                     </a>
@@ -41,10 +41,10 @@
                             <?php } ?>
                         <?php } ?>
                     </div>
-                    <div class="box-tieuchi-item-before row">
+                    <div class="box-tieuchi-item-before">
                         <?php foreach($tieuChi as $k => $v) {?>
                             <?php if($k >= 2 && $k <= 3) { ?>
-                                <div class="tieuchi-item-before col-md-6">
+                                <div class="tieuchi-item-before">
                                     <a class="box-img-tieuchi">
                                         <img class="lazy" onerror="this.src='<?= THUMBS ?>/50x50x1/assets/images/noimage.png';" data-src="<?= UPLOAD_NEWS_L . $v['photo'] ?>" alt="<?= $v['name' . $lang] ?>" title="<?= $v['name' . $lang] ?>"/>
                                     </a>
@@ -194,10 +194,7 @@
                 Hình ảnh thi công
             </div>
             <div class="box-slide-alb">
-                <div class="owl-page owl-carousel owl-theme" data-xsm-items="1:10" data-sm-items="1:10" data-md-items="3:10"
-                data-lg-items="2:10" data-xlg-items="5:6" data-rewind="1" data-autoplay="0" data-loop="0" data-lazyload="0"
-                data-mousedrag="1" data-touchdrag="1" data-smartspeed="500" data-autoplayspeed="3500" data-dots="0"
-                data-nav="1" data-navtext="<svg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-arrow-narrow-left' width='50' height='37' viewBox='0 0 24 24' stroke-width='1' stroke='#ffffff' fill='none' stroke-linecap='round' stroke-linejoin='round'><path stroke='none' d='M0 0h24v24H0z' fill='none'/><line x1='5' y1='12' x2='19' y2='12' /><line x1='5' y1='12' x2='9' y2='16' /><line x1='5' y1='12' x2='9' y2='8' /></svg>|<svg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-arrow-narrow-right' width='50' height='37' viewBox='0 0 24 24' stroke-width='1' stroke='#ffffff' fill='none' stroke-linecap='round' stroke-linejoin='round'><path stroke='none' d='M0 0h24v24H0z' fill='none'/><line x1='5' y1='12' x2='19' y2='12' /><line x1='15' y1='16' x2='19' y2='12' /><line x1='15' y1='8' x2='19' y2='12' /></svg>" data-navcontainer=".control-alb">
+                <div class="owl-page owl-carousel owl-theme" data-xsm-items="1:10" data-sm-items="3:10" data-md-items="3:10" data-lg-items="2:10" data-xlg-items="5:6" data-rewind="1" data-autoplay="0" data-loop="0" data-lazyload="0" data-mousedrag="1" data-touchdrag="1" data-smartspeed="500"  data-autoplayspeed="3500" data-dots="0" data-nav="1" data-navtext="<svg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler  icon-tabler-arrow-narrow-left' width='50' height='37' viewBox='0 0 24 24' stroke-width='1' stroke='#ffffff' fill='none' stroke-linecap='round' stroke-linejoin='round'><path stroke='none' d='M0 0h24v24H0z' fill='none'/><line x1='5' y1='12' x2='19' y2='12' /><line x1='5' y1='12' x2='9' y2='16' /><line x1='5' y1='12' x2='9' y2='8' /></svg>|<svg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-arrow-narrow-right' width='50' height='37' viewBox='0 0 24 24' stroke-width='1' stroke='#ffffff' fill='none' stroke-linecap='round' stroke-linejoin='round'><path stroke='none' d='M0 0h24v24H0z' fill='none'/><line x1='5' y1='12' x2='19' y2='12' /><line x1='15' y1='16' x2='19' y2='12' /><line x1='15' y1='8' x2='19' y2='12' /></svg>" data-navcontainer=".control-alb">
                     <?php foreach($hinhAnhThiCong as $k => $v) { ?>
                         <div class="alb-item">
                             <a href="<?= $v['slug'.$lang] ?>" title="<?= $v['name' . $lang] ?>" class="d-block">
@@ -220,7 +217,7 @@
             Đối tác của chúng tôi
         </div>
         <div class="box-item-partner">
-            <div class="owl-page owl-carousel owl-theme" data-xsm-items="3:18" data-sm-items="5:18" data-md-items="5:18"
+            <div class="owl-page owl-carousel owl-theme" data-xsm-items="3:18" data-sm-items="3:18" data-md-items="5:18"
                 data-lg-items="4:18" data-xlg-items="5:18" data-rewind="1" data-autoplay="1" data-loop="0" data-lazyload="0"
                 data-mousedrag="1" data-touchdrag="1" data-smartspeed="500" data-autoplayspeed="3500" data-dots="0"
                 data-nav="1"

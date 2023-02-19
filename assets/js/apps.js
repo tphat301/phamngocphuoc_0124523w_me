@@ -90,6 +90,16 @@ NN_FRAMEWORK.Menu = function () {
     } else {
       $(".w-menu").removeClass("fix_head animate__animated animate__fadeIn");
     }
+
+    // if (cach_top >= heaigt_header) {
+    //   if (
+    //     !$(".menu-res").hasClass("fix_head animate__animated animate__fadeIn")
+    //   ) {
+    //     $(".menu-res").addClass("fix_head animate__animated animate__fadeIn");
+    //   }
+    // } else {
+    //   $(".menu-res").removeClass("fix_head animate__animated animate__fadeIn");
+    // }
   });
 
   /* Mmenu */
